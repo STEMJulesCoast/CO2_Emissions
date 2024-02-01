@@ -1,4 +1,4 @@
-Visualisierung der CO2-Emissionen mit EDGAR-Daten
+# Visualisierung der CO2-Emissionen mit EDGAR-Daten
 
 ### Über dieses Projekt
 
@@ -7,7 +7,7 @@ Dieses Repository bietet eine detaillierte Visualisierung der CO2-Emissionen bas
 ### Quelle
 
 Die verwendeten Daten stammen von der IEA-EDGAR CO2-Datenbank. Weitere Informationen und Daten finden Sie hier: https://edgar.jrc.ec.europa.eu/report_2023
-Visualisierungen
+
 
 ### Interaktive Visualisierungen erstellt mit Plotly:
 
