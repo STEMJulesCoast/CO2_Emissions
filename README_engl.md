@@ -1,4 +1,4 @@
-CO2 Emission Visualization with EDGAR Data
+# CO2 Emission Visualization with EDGAR Data
 
 ### About This Project
 
