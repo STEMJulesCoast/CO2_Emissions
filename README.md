@@ -25,11 +25,16 @@ Die verwendeten Daten stammen von der IEA-EDGAR CO2-Datenbank. Weitere Informati
 
 Zur Verwendung des Visualisierungsskripts müssen bestimmte Bibliotheken installiert und importiert werden. Das Skript umfasst Funktionen zur Installation fehlender Bibliotheken, zum Laden und Verarbeiten der Emissionsdaten, zur räumlichen Aggregation der Emissionen auf Länderebene und zur Erstellung verschiedener Visualisierungen.
 
-### Schritt-für-Schritt-Anleitung
+### Anleitung
 
-    Klone das Repository.
-    Führe das Visualisierungsskript in einer Python-Umgebung aus.
-    Überprüfe die generierten Plots und Daten.
+Klone das Repository: Klone das gesamte Repository auf deinen lokalen Computer. Dies ermöglicht dir den Zugriff auf alle Dateien und Ordner des Projekts.
+
+Bereite deine Umgebung vor: Stelle sicher, dass Python und Jupyter (Lab oder Notebook) auf deinem System installiert sind, um die .ipynb-Dateien ausführen zu können.
+
+Installiere die benötigten Pakete: Das Notebook enthält eine Funktion, die die fehlenden Bibliotheken installiert. Sollte dies nicht funktionieren, navigiere in das Verzeichnis des Projekts, das die requirements.txt-Datei enthält, und führe `pip install -r requirements.txt` aus, um alle benötigten Bibliotheken zu installieren. Beachte, dass sich für verschiedene Teile des Projekts requirements.txt-Dateien in entsprechenden Unterordnern befinden können. Befolge die spezifischen Anleitungen in den jeweiligen README-Dateien dieser Ordner.
+
+Ausführung der Skripte: Öffne das Visualisierungsskript in Jupyter Lab oder Jupyter Notebook. Beachte, dass bei Verwendung einer anderen Umgebung möglicherweise Anpassungen erforderlich sind. Weitere Informationen findest du im README der jeweiligen Übungen.
+
 
 
 
