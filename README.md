@@ -17,9 +17,9 @@ CO2-Emissionen in Deutschland und globaler jährlicher Durchschnitt: https://cha
 
 ### Repository-Inhalt
 
-`ne_10m_admin_0_countries`: Enthält das Shapefile für die räumliche Zuordnung der Emissionen.
-`CO2_emission_visualization.ipynb`: Ein Python-Skript zur Visualisierung von CO2-Daten aus der EDGAR-Datenbank.
-`Übungen`: Beinhaltet ein Set von Notebooks, das in modulare Programmierungskonzepte einführt. Es umfasst ein separates Notebook für das Laden und Verarbeiten von Daten und Module für Plot-Funktionen, um die Lesbarkeit des Codes zu erhöhen und das Erlernen von Programmierung durch Anpassung von Code-Snippets zu erleichtern. Ein `requirements.txt`-File ist vorhanden, um die notwendigen Bibliotheken zu installieren. Das Hauptnotebook führt dieses separate Notebook für Datenladen und -verarbeitung innerhalb seiner Ausführung aus, was den Code übersichtlicher macht und eine praktische Einführung in das Konzept der Code-Wiederverwendung und Modularität bietet.
+- `ne_10m_admin_0_countries`: Enthält das Shapefile für die räumliche Zuordnung der Emissionen.
+- `CO2_emission_visualization.ipynb`: Ein Python-Skript zur Visualisierung von CO2-Daten aus der EDGAR-Datenbank.
+- `Übungen`: Beinhaltet ein Set von Notebooks, das in modulare Programmierungskonzepte einführt. Es umfasst ein separates Notebook für das Laden und Verarbeiten von Daten und Module für Plot-Funktionen, um die Lesbarkeit des Codes zu erhöhen und das Erlernen von Programmierung durch Anpassung von Code-Snippets zu erleichtern. Ein `requirements.txt`-File ist vorhanden, um die notwendigen Bibliotheken zu installieren. Das Hauptnotebook führt dieses separate Notebook für Datenladen und -verarbeitung innerhalb seiner Ausführung aus, was den Code übersichtlicher macht und eine praktische Einführung in das Konzept der Code-Wiederverwendung und Modularität bietet.
 
 
 ### Installation und Nutzung
