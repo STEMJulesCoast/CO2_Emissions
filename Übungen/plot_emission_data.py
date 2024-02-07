@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
 import cartopy.crs as ccrs
 import pandas as pd
-import numpy as np  # Ensure NumPy is imported for meshgrid
+import numpy as np  
 import plotly.express as px
 
 def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[Tonnes/Year]', save_plot = 'no'):
