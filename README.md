@@ -11,9 +11,9 @@ Die verwendeten Daten stammen von der IEA-EDGAR CO2-Datenbank. Weitere Informati
 
 ### Interaktive Visualisierungen erstellt mit Plotly:
 
-Top 10 CO2-Emitter: https://chart-studio.plotly.com/~julia_koehler_nat/1.embed
-Jährliche Top 10 CO2-Emitter: https://chart-studio.plotly.com/~julia_koehler_nat/5.embed
-CO2-Emissionen in Deutschland und globaler jährlicher Durchschnitt: https://chart-studio.plotly.com/~julia_koehler_nat/3.embed
+- Top 10 CO2-Emitter: https://chart-studio.plotly.com/~julia_koehler_nat/1.embed
+- Jährliche Top 10 CO2-Emitter: https://chart-studio.plotly.com/~julia_koehler_nat/5.embed
+- CO2-Emissionen in Deutschland und globaler jährlicher Durchschnitt: https://chart-studio.plotly.com/~julia_koehler_nat/3.embed
 
 ### Repository-Inhalt
 
