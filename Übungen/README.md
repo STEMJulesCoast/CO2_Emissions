@@ -1,6 +1,6 @@
 ### Übungen zur Analyse von CO2-Emissionen
 
-Dieses Repository enthält Übungsaufgaben, die für Anfänger im textbasierten Programmieren gedacht sind. Die Übungen konzentrieren sich auf die Analyse von CO2-Emissionsdaten mithilfe von Python, basierend auf dem Skript CO2_emissions_exercises.ipynb.
+Dieses Repository enthält Übungsaufgaben, die für Anfänger:innen im textbasierten Programmieren gedacht sind. Die Übungen konzentrieren sich auf die Analyse von CO2-Emissionsdaten mithilfe von Python, basierend auf dem Skript CO2_emissions_exercises.ipynb.
 
 ## Übersicht
 
