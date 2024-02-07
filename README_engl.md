@@ -16,9 +16,9 @@ The data used comes from the IEA-EDGAR CO2 database. For more information and da
 
 ### Repository Content
 
-`ne_10m_admin_0_countries`: Contains the shapefile for spatial mapping of emissions.
-`CO2_emission_visualization.ipynb`: A Python script for visualizing CO2 data from the EDGAR database.
-`Übungen`: (in german) Includes a set of notebooks that introduce modular programming concepts. It features a separate notebook for loading and processing data, as well as modules for plotting functions, to enhance code readability and facilitate learning programming through the adjustment of code snippets. A `requirements.txt` file is provided to install the necessary libraries. The main notebook executes this separate notebook for data loading and processing within its execution, making the code more organized and offering a practical introduction to the concepts of code reuse and modularity.
+- `ne_10m_admin_0_countries`: Contains the shapefile for spatial mapping of emissions.
+- `CO2_emission_visualization.ipynb`: A Python script for visualizing CO2 data from the EDGAR database.
+- `Übungen`: (in german) Includes a set of notebooks that introduce modular programming concepts. It features a separate notebook for loading and processing data, as well as modules for plotting functions, to enhance code readability and facilitate learning programming through the adjustment of code snippets. A `requirements.txt` file is provided to install the necessary libraries. The main notebook executes this separate notebook for data loading and processing within its execution, making the code more organized and offering a practical introduction to the concepts of code reuse and modularity.
 
 
 ### Installation and Use
