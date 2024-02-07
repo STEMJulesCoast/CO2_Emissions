@@ -31,10 +31,9 @@ Klone das Repository: Klone das gesamte Repository auf deinen lokalen Computer. 
 
 Bereite deine Umgebung vor: Stelle sicher, dass Python und Jupyter (Lab oder Notebook) auf deinem System installiert sind, um die .ipynb-Dateien ausführen zu können.
 
-Installiere die benötigten Pakete: Das Notebook enthält eine Funktion, die die fehlenden Bibliotheken installiert. Sollte dies nicht funktionieren, navigiere in das Verzeichnis des Projekts, das die requirements.txt-Datei enthält, und führe `pip install -r requirements.txt` aus, um alle benötigten Bibliotheken zu installieren. Beachte, dass sich für verschiedene Teile des Projekts requirements.txt-Dateien in entsprechenden Unterordnern befinden können. Befolge die spezifischen Anleitungen in den jeweiligen README-Dateien dieser Ordner.
+Installiere die benötigten Pakete: Das Notebook enthält eine Funktion, die die fehlenden Bibliotheken installiert. Sollte dies nicht funktionieren, navigiere in das Verzeichnis des Projekts, das die requirements.txt-Datei enthält, und führe `pip install -r requirements.txt` aus, um alle benötigten Bibliotheken zu installieren und passe den import im Notebook dementsprechend an. 
 
-Ausführung der Skripte: Öffne das Visualisierungsskript in Jupyter Lab oder Jupyter Notebook. Beachte, dass bei Verwendung einer anderen Umgebung möglicherweise Anpassungen erforderlich sind. Weitere Informationen findest du im README der jeweiligen Übungen.
-
+Ausführung der Skripte: Öffne das Visualisierungsskript in Jupyter Lab oder Jupyter Notebook. Beachte, dass bei Verwendung einer anderen Umgebung möglicherweise Anpassungen erforderlich sind. 
 
 
 
