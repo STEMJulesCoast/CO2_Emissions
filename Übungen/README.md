@@ -10,8 +10,7 @@ Dieses Repository enthält Übungsaufgaben, die für Anfänger:innen im textbasi
 
 
 ## Anleitung
-
-Öffnen Sie CO2_emissions_exercises.ipynb in einer Jupyter Notebook-Umgebung. Befolgen Sie die Anweisungen und bearbeiten Sie die Übungen im Notebook. Innerhalb des Skriptes wird das Notebook load_and_process_data.ipynb ausgeführt. 
+Download des Repositories (https://github.com/STEMJulesCoast/CO2_Emissions.git) und öffnen des CO2_emissions_exercises.ipynb - Notebooks in einer Jupyter Notebook-Umgebung. Befolgen Sie die Anweisungen und bearbeiten Sie die Übungen im Notebook. Innerhalb des Skriptes wird das Notebook load_and_process_data.ipynb ausgeführt. 
 **Der Folder ne_10m_admin_0_countries wird auf der selben Ebene benötigt wie das CO2_emissions_exercises.ipynb** Ansonsten Pfade in load_and_process_data.ipynb anpassen.
 
 ## Anforderungen
