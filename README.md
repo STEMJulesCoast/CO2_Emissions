@@ -11,15 +11,16 @@ Die verwendeten Daten stammen von der IEA-EDGAR CO2-Datenbank. Weitere Informati
 
 ### Interaktive Visualisierungen erstellt mit Plotly:
 
-    Top 10 CO2-Emitter: https://chart-studio.plotly.com/~julia_koehler_nat/1.embed
-    Jährliche Top 10 CO2-Emitter: https://chart-studio.plotly.com/~julia_koehler_nat/5.embed
-    CO2-Emissionen in Deutschland und globaler jährlicher Durchschnitt: https://chart-studio.plotly.com/~julia_koehler_nat/3.embed
-
+Top 10 CO2-Emitter: https://chart-studio.plotly.com/~julia_koehler_nat/1.embed
+Jährliche Top 10 CO2-Emitter: https://chart-studio.plotly.com/~julia_koehler_nat/5.embed
+CO2-Emissionen in Deutschland und globaler jährlicher Durchschnitt: https://chart-studio.plotly.com/~julia_koehler_nat/3.embed
 
 ### Repository-Inhalt
 
-    ne_10m_admin_0_countries: Enthält das Shapefile für die räumliche Zuordnung der Emissionen.
-    CO2_emission_visualization.ipynb: Python-Skript zur Visualisierung der CO2-Daten von der EDGAR-Datenbank.
+`ne_10m_admin_0_countries`: Enthält das Shapefile für die räumliche Zuordnung der Emissionen.
+`CO2_emission_visualization.ipynb`: Ein Python-Skript zur Visualisierung von CO2-Daten aus der EDGAR-Datenbank.
+`Übungen`: Beinhaltet ein Set von Notebooks, das in modulare Programmierungskonzepte einführt. Es umfasst ein separates Notebook für das Laden und Verarbeiten von Daten und Module für Plot-Funktionen, um die Lesbarkeit des Codes zu erhöhen und das Erlernen von Programmierung durch Anpassung von Code-Snippets zu erleichtern. Ein `requirements.txt`-File ist vorhanden, um die notwendigen Bibliotheken zu installieren. Das Hauptnotebook führt dieses separate Notebook für Datenladen und -verarbeitung innerhalb seiner Ausführung aus, was den Code übersichtlicher macht und eine praktische Einführung in das Konzept der Code-Wiederverwendung und Modularität bietet.
+
 
 ### Installation und Nutzung
 
