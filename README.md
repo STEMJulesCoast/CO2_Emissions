@@ -19,12 +19,12 @@ Die verwendeten Daten stammen von der IEA-EDGAR CO2-Datenbank. Weitere Informati
 
 - `ne_10m_admin_0_countries`: Enthält das Shapefile für die räumliche Zuordnung der Emissionen.
 - `CO2_emission_visualization.ipynb`: Ein Python-Skript zur Visualisierung von CO2-Daten aus der EDGAR-Datenbank.
-- `Übungen`: Beinhaltet ein Set von Notebooks, das in modulare Programmierungskonzepte einführt. Es umfasst ein separates Notebook für das Laden und Verarbeiten von Daten und Module für Plot-Funktionen, um die Lesbarkeit des Codes zu erhöhen und das Erlernen von Programmierung durch Anpassung von Code-Snippets zu erleichtern. Ein `requirements.txt`-File ist vorhanden, um die notwendigen Bibliotheken zu installieren. Das Hauptnotebook führt dieses separate Notebook für Datenladen und -verarbeitung innerhalb seiner Ausführung aus, was den Code übersichtlicher macht und eine praktische Einführung in das Konzept der Code-Wiederverwendung und Modularität bietet.
+- `Übungen`: Beinhaltet ein Set von Notebooks zur Visualisierung der Emsissionsdaten. Es umfasst ein separates Notebook für das Laden und Verarbeiten von Daten und Module für Plot-Funktionen, um die Lesbarkeit des Codes zu erhöhen und das Erlernen von Programmierung durch Anpassung von Code-Snippets zu erleichtern. Ein `requirements.txt`-File ist vorhanden, um die notwendigen Bibliotheken zu installieren. Das Hauptnotebook führt dieses separate Notebook für Datenladen und -verarbeitung innerhalb seiner Ausführung aus, was den Code übersichtlicher macht und eine praktische Einführung in das Konzept der Code-Wiederverwendung und Modularität bietet.
 
 
 ### Installation und Nutzung
 
-Zur Verwendung des Visualisierungsskripts müssen bestimmte Bibliotheken installiert und importiert werden. Das Skript umfasst Funktionen zur Installation fehlender Bibliotheken, zum Laden und Verarbeiten der Emissionsdaten, zur räumlichen Aggregation der Emissionen auf Länderebene und zur Erstellung verschiedener Visualisierungen.
+Um das Notebook zu nutzen, ist eine aktuelle Installation von Python sowie Jupyter Notebook oder JupyterLab notwendig, da das Skript in einem Jupyter-Umfeld läuft. Das Skript integriert Funktionen, die automatisch fehlende Bibliotheken installieren, Emissionsdaten laden und verarbeiten, die Daten räumlich auf Länderebene aggregieren und diverse Visualisierungen erzeugen. 
 
 ### Anleitung
 
@@ -34,7 +34,7 @@ Bereite deine Umgebung vor: Stelle sicher, dass Python und Jupyter (Lab oder Not
 
 Installiere die benötigten Pakete: Das Notebook enthält eine Funktion, die die fehlenden Bibliotheken installiert. Sollte dies nicht funktionieren, navigiere in das Verzeichnis des Projekts, das die requirements.txt-Datei enthält, und führe `pip install -r requirements.txt` aus, um alle benötigten Bibliotheken zu installieren und passe den import im Notebook dementsprechend an. 
 
-Ausführung der Skripte: Öffne das Visualisierungsskript in Jupyter Lab oder Jupyter Notebook. Beachte, dass bei Verwendung einer anderen Umgebung möglicherweise Anpassungen erforderlich sind. 
+Ausführung der Skripte: Öffne das Notebook in Jupyter Lab oder Jupyter Notebook. Beachte, dass bei Verwendung einer anderen Umgebung möglicherweise Anpassungen erforderlich sind. 
 
 
 
