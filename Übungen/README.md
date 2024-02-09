@@ -22,7 +22,8 @@ Stellen Sie sicher, dass Python auf Ihrem System installiert ist und dass Sie Ju
 ### Wichtige Schritte vor dem Start:
 
 Installation der benötigten Bibliotheken: Vor dem Starten der Übungen müssen alle erforderlichen Bibliotheken installiert sein. 
-Dies kann auf zwei Arten erfolgen:
+Dies kann auf zwei Arten erfolgen:  
+
 **Via Console:** Führen Sie `pip install -r requirements.txt` im Verzeichnis aus, in dem requirements.txt liegt, um alle benötigten Bibliotheken zu installieren.
 
 **Innerhalb des Jupyter Notebooks:** Die erste Code-Zelle im `load_and_process_data.ipynb` versucht, die notwendigen Bibliotheken zu installieren. Sollte dies in Ihrer Umgebung nicht funktionieren, kommentieren Sie diese Zeile aus und stellen Sie sicher, dass alle Bibliotheken wie gewohnt in Ihrer Umgebung installiert sind.
