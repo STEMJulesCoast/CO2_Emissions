@@ -5,8 +5,7 @@ geopandas
 cartopy
 pandas
 plotly
-shapely
-netCDF4
 tqdm
 geoviews
 rioxarray
+requests

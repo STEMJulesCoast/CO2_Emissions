@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
 import cartopy.crs as ccrs
-import pandas as pd
 import numpy as np  # Ensure NumPy is imported for meshgrid
 import plotly.express as px
+import os
 
 def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[Tonnes/Year]', save_plot = 'no'):
     """
@@ -24,6 +24,7 @@ def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[T
     lon, lat = np.meshgrid(ds.lon, ds.lat)
 
     # Create plot figure
+   
     fig, ax = plt.subplots(figsize=(8, 5.6), subplot_kw={'projection': projection}, dpi=300)
     ax.patch.set_facecolor('black')
     fig.patch.set_alpha(0)
@@ -45,6 +46,7 @@ def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[T
     if save_plot == 'yes':
         plt.savefig(f'CO2_{year}.png', dpi=300, bbox_inches='tight', pad_inches=0)
         print(f'Plot saved as CO2_{year}.png')
+    
     plt.show()
 
 
@@ -96,7 +98,5 @@ def plot_emissions(df, chart_type='top', start_year=1970, end_year=2022, country
 
     fig.update_traces(marker_color='blue')  # Update traces for specific styling
 
-    # Display the chart
     fig.show()
-
 
