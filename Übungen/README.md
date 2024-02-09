@@ -8,6 +8,7 @@ Dieses Repository enthält Übungsaufgaben, die für Anfänger:innen im textbasi
 
 **load_and_process_data.ipynb:** Dieses Skript wird innerhalb des Notebooks `CO2_emissions_exercises.ipynb` ausgeführt. Es lädt und verarbeitet die CO2-Emissionsdaten, um sie für die Visualisierung und Analyse vorzubereiten.
 
+**plot_emission_data.py:** Ein Modul für die Visualisierung der Emissionsdaten.
 
 ## Anleitung
 Download des Repositories (https://github.com/STEMJulesCoast/CO2_Emissions.git) und öffnen des CO2_emissions_exercises.ipynb - Notebooks in einer Jupyter Notebook-Umgebung. Befolgen Sie die Anweisungen und bearbeiten Sie die Übungen im Notebook. 
