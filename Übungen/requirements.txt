@@ -1,5 +1,8 @@
 numpy
 matplotlib
+netcdf4
+h5netcdf
+dask
 xarray
 geopandas
 cartopy
@@ -9,3 +12,5 @@ tqdm
 geoviews
 rioxarray
 requests
+nbformat>=4.2.0
+
