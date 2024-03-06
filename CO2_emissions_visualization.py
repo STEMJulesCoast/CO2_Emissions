@@ -38,7 +38,7 @@ import shutil
 import rioxarray
 print("All modules successfully imported!")
 
-url = "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EDGAR/datasets/v80_FT2022_GHG/CO2/TOTALS/TOTALS_emi_nc.zip"
+URL = "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EDGAR/datasets/v80_FT2022_GHG/CO2/TOTALS/TOTALS_emi_nc.zip"
 # Define the path to the shapefile for calculating emissions by country
 PATH_SHAPEFILE = os.path.abspath(os.path.join('Data', 'ne_10m_admin_0_countries', 'ne_10m_admin_0_countries.shp'))
 
@@ -61,7 +61,7 @@ if not nc_files_exist:
         # Make directory if it does not exist
         os.makedirs(os.path.dirname(LOCAL_ZIP_PATH), exist_ok=True)
         print("Downloading ZIP file...")
-        response = requests.get(url)  # Ensure 'url' is defined somewhere above this line
+        response = requests.get(URL)  # Ensure 'url' is defined somewhere above this line
         with open(LOCAL_ZIP_PATH, 'wb') as f:
             f.write(response.content)
         print("Download completed.")
