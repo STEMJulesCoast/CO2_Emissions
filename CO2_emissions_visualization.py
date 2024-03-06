@@ -36,41 +36,39 @@ import plotly.express as px
 import plotly.graph_objects as go
 import shutil
 import rioxarray
-
+print("All modules successfully imported!")
 
 url = "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EDGAR/datasets/v80_FT2022_GHG/CO2/TOTALS/TOTALS_emi_nc.zip"
 # Define the path to the shapefile for calculating emissions by country
 PATH_SHAPEFILE = os.path.abspath(os.path.join('Data', 'ne_10m_admin_0_countries', 'ne_10m_admin_0_countries.shp'))
 
-
-print("All modules successfully imported!")
-
-local_zip_path = os.path.abspath(os.path.join('Data', 'TOTALS_emi_nc.zip'))
-extraction_path = os.path.abspath(os.path.join('Data', 'Temp'))
+# Define path to zip file and the path for extraction of the zip file
+LOCAL_ZIP_PATH = os.path.abspath(os.path.join('Data', 'TOTALS_emi_nc.zip'))
+EXTRACTION_PATH = os.path.abspath(os.path.join('Data', 'Temp'))
 
 
 # Check if the extracted data already exists
-nc_files_exist = os.listdir(extraction_path) if os.path.exists(extraction_path) else []
+nc_files_exist = os.listdir(EXTRACTION_PATH) if os.path.exists(EXTRACTION_PATH) else []
 
 # Only proceed with download and extraction if no extracted .nc files are found
 if not nc_files_exist:
     # Ensure the extraction directory exists
-    if not os.path.exists(extraction_path):
-        os.makedirs(extraction_path)
+    if not os.path.exists(EXTRACTION_PATH):
+        os.makedirs(EXTRACTION_PATH)
 
     # Check if the ZIP file exists locally; if not, download it
-    if not os.path.exists(local_zip_path):
+    if not os.path.exists(LOCAL_ZIP_PATH):
         # Make directory if it does not exist
-        os.makedirs(os.path.dirname(local_zip_path), exist_ok=True)
+        os.makedirs(os.path.dirname(LOCAL_ZIP_PATH), exist_ok=True)
         print("Downloading ZIP file...")
         response = requests.get(url)  # Ensure 'url' is defined somewhere above this line
-        with open(local_zip_path, 'wb') as f:
+        with open(LOCAL_ZIP_PATH, 'wb') as f:
             f.write(response.content)
         print("Download completed.")
 
     # Extract the ZIP file
-    with zipfile.ZipFile(local_zip_path, 'r') as zip_ref:
-        zip_ref.extractall(extraction_path)
+    with zipfile.ZipFile(LOCAL_ZIP_PATH, 'r') as zip_ref:
+        zip_ref.extractall(EXTRACTION_PATH)
         print("Extraction completed.")
 else:
     print("Data already exists. Skipping download and extraction.")
@@ -80,7 +78,7 @@ def extract_year_from_filename(filename):
     match = re.search(r"_\d{4}_", filename)
     return int(match.group(0)[1:-1]) if match else None
 
-nc_files = [os.path.join(extraction_path, file) for file in os.listdir(extraction_path) if file.endswith('.nc')]
+nc_files = [os.path.join(EXTRACTION_PATH, file) for file in os.listdir(EXTRACTION_PATH) if file.endswith('.nc')]
 
 nc_files_sorted = sorted(nc_files, key=lambda x: extract_year_from_filename(x))
 
