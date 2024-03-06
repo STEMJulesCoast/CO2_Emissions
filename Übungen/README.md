@@ -1,6 +1,22 @@
 ### Übungen zur Analyse von CO2-Emissionen
 
-Dieses Repository enthält Übungsaufgaben, die für Anfänger:innen im textbasierten Programmieren gedacht sind. Die Übungen konzentrieren sich auf die Analyse von CO2-Emissionsdaten mithilfe von Python, basierend auf dem Skript `CO2_emissions_exercises.ipynb`.
+## Über dieses Repository
+
+Dieses Repository enthält Übungsaufgaben, die speziell für Einsteiger:innen im textbasierten Programmieren konzipiert sind. Im Fokus stehen die Analyse und Visualisierung von CO2-Emissionsdaten unter Verwendung von Python, basierend auf dem Jupyter Notebook `CO2_emissions_exercises.ipynb`.
+
+Die Übungen sind in einer Jupyter Notebook-Umgebung durchzuführen, wobei der Code in Anaconda3 getestet wurde. Anaconda ist eine populäre Distribution, die das Arbeiten mit wissenschaftlichen Paketen in Python vereinfacht und eine nahtlose Integration mit Jupyter Notebooks bietet.
+
+### Anaconda mit Visual Studio Code verknüpfen
+
+Um eine effiziente Entwicklungsumgebung zu schaffen, kann Anaconda direkt mit Visual Studio Code (VS Code) verknüpft werden. Dies ermöglicht es, Jupyter Notebooks direkt in VS Code zu bearbeiten und auszuführen, wodurch eine konsistente und leistungsstarke Arbeitsumgebung für die Datenanalyse geschaffen wird. Um Anaconda mit VS Code zu verknüpfen:
+
+1. Anaconda auf dem System installieren.
+2. Python-Erweiterung in VS Code installieren, falls noch nicht geschehen.
+3. Öffnen von VS Code und in den Einstellungen zu `Python: Select Interpreter` navigieren.
+4. Wählen des Anaconda-Interpreter aus der Liste der verfügbaren Interpreter.
+
+Durch diese Verknüpfung profitiert man von der umfangreichen Paketverwaltung durch Conda und der flexiblen Entwicklungsumgebung von VS Code.
+
 
 ## Übersicht
 
@@ -24,9 +40,13 @@ Stellen Sie sicher, dass Python auf Ihrem System installiert ist und dass Sie Ju
 Installation der benötigten Bibliotheken: Vor dem Starten der Übungen müssen alle erforderlichen Bibliotheken installiert sein. 
 Dies kann auf zwei Arten erfolgen:  
 
-**Via Console:** Führen Sie `pip install -r requirements.txt` im Verzeichnis aus, in dem requirements.txt liegt, um alle benötigten Bibliotheken zu installieren.
+**Via Console:** Führen Sie 
+```shell
+pip install -r requirements.txt 
+```
+im Verzeichnis aus, in dem requirements.txt liegt, um alle benötigten Bibliotheken zu installieren.
 
-**Innerhalb des Jupyter Notebooks:** Die erste Code-Zelle im `load_and_process_data.ipynb` versucht, die notwendigen Bibliotheken zu installieren. Sollte dies in Ihrer Umgebung nicht funktionieren, kommentieren Sie diese Zeile aus und stellen Sie sicher, dass alle Bibliotheken wie gewohnt in Ihrer Umgebung installiert sind.
+**Innerhalb des Jupyter Notebooks:** Die erste Code-Zelle im `load_and_process_data.ipynb` kann zur Installation aus dem Notebook heraus auskommentiert werden.
 
 ## Anpassungen:
 

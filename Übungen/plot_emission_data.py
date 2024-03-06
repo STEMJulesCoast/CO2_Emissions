@@ -5,7 +5,7 @@ import numpy as np  # Ensure NumPy is imported for meshgrid
 import plotly.express as px
 import os
 
-def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[Tonnes/Year]', save_plot = 'no'):
+def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[Tonnes/Year]', save_plot='no', save_path=None):
     """
     Plot global CO2 emissions for a specified year using cartopy for map projections.
     
@@ -15,7 +15,8 @@ def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[T
     - projection: cartopy.crs projection instance.
     - colormap: String specifying the matplotlib colormap.
     - clabel: String for the colorbar label.
-    - save_plot: Save Figure if set to Yes
+    - save_plot: String, if set to 'yes', the plot will be saved.
+    - save_path: String, specifying the path and filename where the plot should be saved. If None, defaults to 'CO2_<year>.png'.
     """
     # Select emissions for the specified year
     emissions_year = ds.sel(time=str(year)).emissions.compute().squeeze()
@@ -24,7 +25,6 @@ def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[T
     lon, lat = np.meshgrid(ds.lon, ds.lat)
 
     # Create plot figure
-   
     fig, ax = plt.subplots(figsize=(8, 5.6), subplot_kw={'projection': projection}, dpi=300)
     ax.patch.set_facecolor('black')
     fig.patch.set_alpha(0)
@@ -42,10 +42,12 @@ def plot_map(ds, year, projection=ccrs.Robinson(), colormap='afmhot', clabel='[T
     # Add coastlines
     ax.coastlines(color='dimgray', linewidth=0.5)
 
-    # Save the graphic
-    if save_plot == 'yes':
-        plt.savefig(f'CO2_{year}.png', dpi=300, bbox_inches='tight', pad_inches=0)
-        print(f'Plot saved as CO2_{year}.png')
+    # Check if the plot should be saved
+    if save_plot.lower() == 'yes':
+        # Use the provided save_path or default to 'CO2_<year>.png'
+        save_path = save_path if save_path else f'CO2_{year}.png'
+        plt.savefig(save_path, dpi=300, bbox_inches='tight', pad_inches=0)
+        print(f'Plot saved as {save_path}')
     
     plt.show()
 
