@@ -27,44 +27,25 @@ Die verwendeten Daten stammen von der IEA-EDGAR CO2-Datenbank. Weitere Informati
 
 ### Mit Anaconda (empfohlen)
 
-Die Ausführung der Jupyter Notebooks wird am besten mit der Installation von Anaconda durchgeführt, wobei mindestens Python 3.11 empfohlen wird. Anaconda vereinfacht die Paketverwaltung und die Einrichtung von virtuellen Umgebungen. Sie können Anaconda von [hier](https://www.anaconda.com/products/individual) herunterladen und installieren.
+Anaconda vereinfacht die Paketverwaltung und die Einrichtung von virtuellen Umgebungen. Anaconda kann von [hier](https://www.anaconda.com/products/individual) herunterladen und installiert werden.
 
-### Ohne Anaconda
+### VS Code
 
-Falls Anaconda nicht installiert ist oder Sie es vorziehen, ohne Anaconda zu arbeiten, ist Python 3.10 erforderlich. Zusätzlich müssen die in der `requirements.txt` Datei aufgeführten Pakete installiert werden. Die Verwendung eines virtuellen Umfelds (`venv`) wird empfohlen, um die Paketabhängigkeiten zu isolieren und Konflikte zu vermeiden. 
+**Python installieren:** Wenn Python noch nicht installiert ist, kann es von  python.org  heruntergeladen werden. Bei der Installation auf Windows darauf achten, die Option "Add Python 3.x to PATH" zu aktivieren, um Python und pip in der Befehlszeile/Shell nutzen zu können.  
+**VS Code konfigurieren:** Starten von Visual Studio Code und Strg + Shift + P (Cmd + Shift + P auf Mac) nutzen, um den Python-Interpreter auszuwählen. Hier den Pfad zu python.exe angeben.  
+**Pylance und Jupyter installieren:** Über die VS Code Extensions sowohl Pylance für Python-Unterstützung als auch Jupyter für die Arbeit mit Notebooks installieren.  
+**Notebook öffnen:** Öffnen des Jupyter Notebooks in VS Code. Mit Strg + Shift + P,  "Select another kernel" auswählen, um ein virtuelles Environment zu erstellen.  
+**Abhängigkeiten installieren:** Bei Vorhandensein einer requirements.txt wird man gefragt, ob die die Pakete installiert werden sollen. Auf jeden Fall.  
+**Notebook ausführen:** Das Notebook kann nach der Installation der Abhängigkeiten ausgeführt werden. Hier kann nun  mit verschiedenen Funktionen experimentiert und eigene Analysen und Visualisierungen erstellt werden.  
 
-#### Einrichtung eines virtuellen Umfelds und Installation der Abhängigkeiten:
 
-1. Erstellen Sie ein neues virtuelles Umfeld:
-
-
-### Anleitung
-
-1. **Klone das Repository**: Klone das gesamte Repository auf deinen lokalen Computer für Zugriff auf alle Dateien und Ordner des Projekts.
-
-2. **Bereite deine Umgebung vor**: Stelle sicher, dass Python 3.10 und Jupyter (Lab oder Notebook) auf deinem System installiert sind. 
-
-3. **Erstelle ein virtuelles Umfeld**:
-    ```
-    python -m venv venv
-    venv\Scripts\activate  # Windows
-    source venv/bin/activate  # Unix/Mac
-    ```
-
-4. **Installiere die benötigten Pakete**:
-    ```shell
-    pip install -r requirements.txt
-    ```
-    #### Probleme bei der Installation von Cartopy
-    
-    Wenn Anaconda oder Miniconda verwendet werden und Probleme bei der Installation von Cartopy auftreten, empfiehlt es sich, Cartopy über Conda zu installieren. Conda kann oft Abhängigkeitskonflikte besser auflösen und erleichtert die Installation von Paketen, die native Bibliotheken erfordern. Cartopy mit Conda aus dem `conda-forge` Kanal zu installieren:
+#### Probleme bei der Installation von Cartopy
+Wenn Anaconda oder Miniconda verwendet werden und Probleme bei der Installation von Cartopy auftreten, empfiehlt es sich, Cartopy über Conda zu installieren. Conda kann oft Abhängigkeitskonflikte besser auflösen und erleichtert die Installation von Paketen, die native Bibliotheken erfordern. Cartopy mit Conda aus dem `conda-forge` Kanal zu installieren:
     
  ```shell
 conda install -c conda-forge cartopy
  ```
     
-
-
 
 5. **Ausführung der Skripte**: Öffne das Notebook oder das Python-Skript in deiner bevorzugten Entwicklungsumgebung. Beachte, dass bei Verwendung einer anderen Umgebung möglicherweise Anpassungen erforderlich sind.
 
